@@ -1,4 +1,4 @@
-public class Frog_and_jump_GFG {
+public class Frog_Jump_2 {
 
     public static int unvisitedLeaves(int N, int leaves, int frogs[]) {
         int result = 0;
