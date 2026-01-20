@@ -1,6 +1,9 @@
 public class Frog_Jump_2 {
+    public static void main(String[] args) {
+        int N = 3;
+        int leaves = 4;
+        int frogs[] = {3, 3, 4};
 
-    public static int unvisitedLeaves(int N, int leaves, int frogs[]) {
         int result = 0;
         boolean visited[] = new boolean[leaves+1];
         
@@ -16,13 +19,7 @@ public class Frog_Jump_2 {
         for(int i=1; i<=leaves; i++){
             if(!visited[i]) result++;
         }
-        return result;
-    }
-    public static void main(String[] args) {
-        int N = 3;
-        int leaves = 4;
-        int frogs[] = {3, 2, 4};
 
-        System.out.println(unvisitedLeaves(N, leaves, frogs));
+        System.out.println(result);
     }
 }
